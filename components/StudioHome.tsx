@@ -6,6 +6,7 @@ import Header from './Header';
 import Hero from './Hero';
 import Ribbon from './Ribbon';
 import WhatWeDo from './WhatWeDo';
+import ProcessSection from './ProcessSection';
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Asterisk, BarChart3, Check,
   ChevronDown, Code2, Dribbble, Heart, Instagram, Layers3, Lightbulb,
@@ -18,13 +19,6 @@ const projects = [
   { title: 'Bloomwell', category: 'Health & wellness', type: 'Brand identity', color: 'project-green', label: 'A LITTLE MORE\nWELLNESS', mark: '✿' },
   { title: 'Forma Studio', category: 'Fashion & lifestyle', type: 'Digital experience', color: 'project-lilac', label: 'STYLE THAT\nSPEAKS', mark: '◌' },
   { title: 'Pulse Fit', category: 'Fitness & technology', type: 'UI / UX design', color: 'project-blue', label: 'MOVE WITH\nPURPOSE', mark: '↗' },
-];
-
-const approach = [
-  { step: '01', title: 'Get curious.', text: 'We ask questions, listen closely, and get to know the people behind the brand.', icon: <MousePointer2 />, note: 'THE DISCOVERY' },
-  { step: '02', title: 'Find your spark.', text: 'We shape your positioning, visual direction, voice, and creative strategy.', icon: <Lightbulb />, note: 'THE DIRECTION' },
-  { step: '03', title: 'Make it real.', text: 'We turn the big idea into a cohesive identity, content, campaigns, and experiences.', icon: <Palette />, note: 'THE CREATION' },
-  { step: '04', title: 'Keep it growing.', text: 'We learn from the results, refine the work, and help your brand evolve.', icon: <TrendingUp />, note: 'THE MOMENTUM' },
 ];
 
 const industries = [
@@ -64,9 +58,7 @@ export default function StudioHome() {
 
       <WhatWeDo />
 
-      <section className="approach-band" id="approach"><div className="wrap approach-wrap"><motion.div className="approach-intro" {...reveal}><span className="eyebrow"><span />THE WAY WE WORK<span /></span><h2>From “what if?”<br />to <span className="highlight highlight-yellow">“that’s so us.”</span></h2><p>We don’t believe in one-size-fits-all creative. We get to know your world first, then build something that belongs in it.</p><a className="button button-outline" href="#contact">Get to know us <ArrowRight size={16} /></a><Doodle className="approach-doodle">✎</Doodle></motion.div>
-          <div className="approach-steps">{approach.map((item, i) => <motion.article className="approach-step" key={item.step} {...reveal} transition={{ duration: 0.45, delay: i * 0.09 }}><div className={`step-illustration step-${i + 1}`}><span>{item.icon}</span><b>{item.step}</b></div><span className="step-note">{item.note}</span><h3>{item.title}</h3><p>{item.text}</p>{i < approach.length - 1 && <ArrowRight className="step-arrow" size={23} />}</motion.article>)}</div>
-        </div></section>
+      <ProcessSection />
 
       <section className="section wrap" id="work"><motion.div {...reveal}><SectionTitle eyebrow="A peek at the possibilities" title={<>Different worlds. <span className="scribble-underline">Distinctive stories.</span></>} text="Every project starts with a different challenge. Here’s a little taste of how we make each brand feel like its own universe." /></motion.div>
         <div className="portfolio-toolbar"><p>THE LITTLE BLACK BOOK <span>— A FEW FAVOURITES</span></p><div className="filter-list">{['All work', 'Brand identity', 'UI / UX design', 'Social campaign'].map(f => <button key={f} className={activeFilter === f ? 'filter active' : 'filter'} onClick={() => setActiveFilter(f)}>{f}</button>)}</div></div>

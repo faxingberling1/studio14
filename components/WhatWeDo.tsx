@@ -115,31 +115,20 @@ export default function WhatWeDo() {
           ))}
         </div>
 
-        {/* Floating Doodle Stars in Section Canvas */}
-        <motion.div
-          aria-hidden="true"
-          animate={reduceMotion ? {} : { rotate: [-3, 3, -3], y: [0, -3, 0] }}
-          transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
-          className="pointer-events-none absolute -bottom-3 left-1 sm:left-3 text-[#6ec3ec] select-none z-10"
-        >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="#6ec3ec" stroke="#19263a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm">
-            <path d="M12 2.5L14.7 8.5L21.2 9.4L16.5 14L17.8 20.8L12 17.5L6.2 20.8L7.5 14L2.8 9.4L9.3 8.5L12 2.5Z" />
-          </svg>
-        </motion.div>
+        {/* Section Footnote with Flanking Doodle Stars */}
+        <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 mt-12 px-6 sm:px-8 select-none z-10">
+          {/* Blue Doodle Star on Left of Footnote */}
+          <motion.div
+            aria-hidden="true"
+            animate={reduceMotion ? {} : { rotate: [-3, 3, -3], y: [0, -3, 0] }}
+            transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
+            className="pointer-events-none absolute -left-1 sm:-left-3 top-1/2 -translate-y-1/2 text-[#6ec3ec] select-none hidden sm:block"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#6ec3ec" stroke="#19263a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm">
+              <path d="M12 2.5L14.7 8.5L21.2 9.4L16.5 14L17.8 20.8L12 17.5L6.2 20.8L7.5 14L2.8 9.4L9.3 8.5L12 2.5Z" />
+            </svg>
+          </motion.div>
 
-        <motion.div
-          aria-hidden="true"
-          animate={reduceMotion ? {} : { rotate: [3, -3, 3], y: [0, -4, 0] }}
-          transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
-          className="pointer-events-none absolute -bottom-3 right-1 sm:right-3 text-[#ffd03b] select-none z-10"
-        >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="#ffd03b" stroke="#19263a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm">
-            <path d="M12 2.5L14.7 8.5L21.2 9.4L16.5 14L17.8 20.8L12 17.5L6.2 20.8L7.5 14L2.8 9.4L9.3 8.5L12 2.5Z" />
-          </svg>
-        </motion.div>
-
-        {/* Section Footnote */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-12 pt-6 border-t border-[#19263a]/10 px-2 select-none">
           <span className="font-serif italic text-[15px] text-[#5e6b7d]">
             Need a little bit of everything?{' '}
             <span className="text-[#19263a] underline decoration-[#ffcf4e] decoration-2 underline-offset-4 font-semibold">
@@ -153,6 +142,30 @@ export default function WhatWeDo() {
             <span>Let’s find your mix</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
+
+          {/* Yellow Doodle Star on Right of Footnote */}
+          <motion.div
+            aria-hidden="true"
+            animate={reduceMotion ? {} : { rotate: [3, -3, 3], y: [0, -4, 0] }}
+            transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
+            className="pointer-events-none absolute -right-1 sm:-right-3 top-1/2 -translate-y-1/2 text-[#ffd03b] select-none hidden sm:block"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffd03b" stroke="#19263a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-sm">
+              <path d="M12 2.5L14.7 8.5L21.2 9.4L16.5 14L17.8 20.8L12 17.5L6.2 20.8L7.5 14L2.8 9.4L9.3 8.5L12 2.5Z" />
+            </svg>
+          </motion.div>
+        </div>
+
+        {/* Hand-Drawn Doodle Theme Divider (Positioned Below the Footnote) */}
+        <div className="w-full flex items-center justify-center pt-10 pb-2 select-none pointer-events-none" aria-hidden="true">
+          <svg width="260" height="24" viewBox="0 0 260 24" fill="none" className="text-[#19263a]">
+            {/* Left Hand-Drawn Stroke */}
+            <path d="M10 12 C 40 9, 80 15, 115 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+            {/* Center Yellow Doodle Star */}
+            <path d="M130 3 L133 9.5 L140 10.5 L135 15.5 L136.5 22.5 L130 19 L123.5 22.5 L125 15.5 L120 10.5 L127 9.5 Z" fill="#ffd03b" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+            {/* Right Hand-Drawn Stroke */}
+            <path d="M145 12 C 180 9, 220 15, 250 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+          </svg>
         </div>
       </div>
     </section>
