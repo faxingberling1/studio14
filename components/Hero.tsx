@@ -8,117 +8,91 @@ export default function Hero() {
 
   return (
     <section className="relative w-full bg-transparent pt-1 sm:pt-3 pb-10 lg:pb-14" id="home">
-      {/* Background Subtle Splatters & Far-Right Wash */}
+      {/* Background Soft Splash */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-10 right-0 w-80 h-80 bg-[#fcd5e5]/30 rounded-full blur-3xl -z-10"
+        className="pointer-events-none absolute top-10 right-0 w-80 h-80 bg-[#fcd5e5]/25 rounded-full blur-3xl -z-10"
       />
 
       <div className="max-w-[1240px] mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
-        {/* Left Column: Tilted note, Headline, Body, Button, Proof Points */}
+        {/* Left Column: Authentic Hand-Drawn Headline, Description, Button, Proof Badges */}
         <div className="lg:col-span-5 xl:col-span-5 relative z-10 flex flex-col items-start pt-1">
-          {/* Tilted Doodle Note: "Ideas Strategy Design Technology" */}
-          <div className="mb-2 sm:mb-3 flex items-start gap-2 select-none">
-            <div className="text-left font-handwriting text-[17px] sm:text-[19px] font-bold leading-tight text-[#2b3548] -rotate-12">
-              Ideas<br />
-              Strategy<br />
-              Design<br />
-              Technology
-            </div>
-            {/* Hand-drawn arrow & heart */}
-            <div className="pt-1 flex flex-col items-center -rotate-6">
-              <svg width="22" height="26" viewBox="0 0 28 32" fill="none" className="text-[#334155]">
-                <path
-                  d="M4 4C14 6 22 14 20 25M20 25L14 20M20 25L25 19"
-                  stroke="currentColor"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="font-handwriting text-base font-bold text-[#2b3548] -mt-1">♡</span>
-            </div>
+          {/* Authentic Hand-Crafted Headline Artwork from Reference */}
+          <div className="relative mb-4 sm:mb-5 w-full max-w-[480px]">
+            <h1 className="sr-only">
+              Studio 14 — Your Brand. Our Creativity. Real Results. Ideas, Strategy, Design, Technology.
+            </h1>
+            <img
+              src="/hero-headline-transparent.png"
+              alt="Studio 14 - Your Brand. Our Creativity. Real Results. Ideas, Strategy, Design, Technology."
+              width={860}
+              height={394}
+              className="w-full h-auto object-contain select-none pointer-events-none drop-shadow-[0_2px_8px_rgba(0,0,0,0.03)]"
+            />
           </div>
 
-          {/* Headline */}
-          <h1 className="font-extrabold text-[40px] sm:text-[50px] lg:text-[54px] xl:text-[58px] leading-[1.08] text-[#162132] tracking-tight mb-4">
-            <span>Your Brand.</span>
-            <br />
-            {/* "Our Creativity." with yellow painted brush stroke */}
-            <span className="relative inline-block mt-0.5 px-2 -ml-2">
-              <span className="relative z-10">Our Creativity.</span>
-              <span
-                aria-hidden="true"
-                className="absolute inset-x-0 bottom-1 sm:bottom-1.5 h-[50%] bg-[#fed766] -rotate-1 rounded-[3px] -z-0 opacity-95"
-              />
-            </span>
-            <br />
-            {/* "Real Results." with sky blue painted brush stroke */}
-            <span className="relative inline-block mt-0.5 px-2 -ml-2">
-              <span className="relative z-10">Real Results.</span>
-              <span
-                aria-hidden="true"
-                className="absolute inset-x-0 bottom-1 sm:bottom-1.5 h-[48%] bg-[#bfeaf8] rotate-[0.7deg] rounded-[3px] -z-0 opacity-95"
-              />
-            </span>
-          </h1>
-
           {/* Subtext Paragraph */}
-          <p className="text-[#596677] text-[15px] sm:text-[16px] leading-relaxed max-w-[430px] mb-6 font-normal">
+          <p className="text-[#4e5b6e] text-[15px] sm:text-[16px] leading-[1.65] max-w-[440px] mb-6 font-normal">
             Studio 14 is a full-service digital agency helping brands grow through creative marketing,
             strategic social media, stunning design and powerful technology.
           </p>
 
-          {/* CTA Button */}
-          <div className="relative mb-8">
+          {/* CTA Button + Blue Doodle Star */}
+          <div className="flex items-center gap-3.5 mb-7">
+            {/* Blue doodle star with black ink outline */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none select-none text-[#6ec3ec] flex-shrink-0"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="#19263a" strokeWidth="2">
+                <path d="M12 2L15 8.5L22 9.5L17 14.5L18.5 21.5L12 18L5.5 21.5L7 14.5L2 9.5L9 8.5L12 2Z" />
+              </svg>
+            </div>
+
             <a
               href="#contact"
-              className="inline-flex items-center gap-2.5 bg-[#ffcf4e] hover:bg-[#fec32a] text-[#19263a] font-bold text-[15px] px-7 py-3 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95 group"
+              className="inline-flex items-center gap-2.5 bg-[#fecb3e] hover:bg-[#fdbd1a] text-[#19263a] font-bold text-[15px] px-7 py-3 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95 group"
             >
               <span>Let&apos;s Work Together</span>
               <ArrowRight className="w-4 h-4 stroke-[2.7] transition-transform duration-200 group-hover:translate-x-1" />
             </a>
-
-            {/* Blue doodle star with black outline beside button */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -left-7 top-1/2 -translate-y-1/2 text-[#8dd4ef] select-none"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="#19263a" strokeWidth="2">
-                <path d="M12 2L15 8.5L22 9.5L17 14.5L18.5 21.5L12 18L5.5 21.5L7 14.5L2 9.5L9 8.5L12 2Z" />
-              </svg>
-            </div>
           </div>
 
-          {/* Proof Badges (Creative Solutions, Data-Driven, Real Growth) */}
-          <div className="w-full flex flex-wrap items-center gap-6 sm:gap-8 select-none">
-            {/* Badge 1: Creative Solutions */}
+          {/* Proof Badges with Vertical Dividers */}
+          <div className="w-full flex items-center gap-3 sm:gap-4 select-none pt-2 border-t border-[#19263a]/8 sm:border-0 sm:pt-0">
+            {/* Badge 1 */}
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-full bg-[#fde99a]/60 flex items-center justify-center text-[#19263a]">
+              <div className="w-7 h-7 rounded-full bg-[#fde99a]/70 flex items-center justify-center text-[#19263a]">
                 <Rocket className="w-3.5 h-3.5" />
               </div>
-              <div className="text-[11px] font-bold text-[#19263a] leading-tight">
-                Creative<br /><span className="text-[#64748b] font-medium">Solutions</span>
+              <div className="text-[11.5px] font-bold text-[#19263a] leading-tight">
+                Creative<br /><span className="text-[#64748b] font-medium text-[11px]">Solutions</span>
               </div>
             </div>
 
-            {/* Badge 2: Data-Driven Strategies */}
+            {/* Divider Line */}
+            <div className="h-6 w-[1px] bg-[#dbe0e6]" />
+
+            {/* Badge 2 */}
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-full bg-[#bfeaf8]/60 flex items-center justify-center text-[#0284c7]">
+              <div className="w-7 h-7 rounded-full bg-[#bfeaf8]/70 flex items-center justify-center text-[#0284c7]">
                 <Heart className="w-3.5 h-3.5 fill-current" />
               </div>
-              <div className="text-[11px] font-bold text-[#19263a] leading-tight">
-                Data-Driven<br /><span className="text-[#64748b] font-medium">Strategies</span>
+              <div className="text-[11.5px] font-bold text-[#19263a] leading-tight">
+                Data-Driven<br /><span className="text-[#64748b] font-medium text-[11px]">Strategies</span>
               </div>
             </div>
 
-            {/* Badge 3: Real Growth */}
+            {/* Divider Line */}
+            <div className="h-6 w-[1px] bg-[#dbe0e6]" />
+
+            {/* Badge 3 */}
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-full bg-[#cbead7]/60 flex items-center justify-center text-[#15803d]">
+              <div className="w-7 h-7 rounded-full bg-[#cbead7]/70 flex items-center justify-center text-[#15803d]">
                 <BarChart3 className="w-3.5 h-3.5" />
               </div>
-              <div className="text-[11px] font-bold text-[#19263a] leading-tight">
-                Real<br /><span className="text-[#64748b] font-medium">Growth</span>
+              <div className="text-[11.5px] font-bold text-[#19263a] leading-tight">
+                Real<br /><span className="text-[#64748b] font-medium text-[11px]">Growth</span>
               </div>
             </div>
           </div>
