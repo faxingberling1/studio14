@@ -53,22 +53,13 @@ export default function Header({ activeNav = 'Home', onNavClick }: HeaderProps) 
           className="group flex flex-col items-center flex-shrink-0 select-none transition-transform duration-200 hover:scale-[1.03]"
           aria-label="Studio 14 Homepage"
         >
-          {/* Handwritten "Studio" text */}
-          <span className="font-handwriting text-[23px] sm:text-[25px] font-bold text-[#1a2333] tracking-tight leading-none -mb-1 transform -rotate-1">
-            Studio
-          </span>
-
-          {/* Black Square with bold 14 */}
-          <div className="w-10 h-10 sm:w-11 sm:h-11 bg-[#151c28] rounded-[3px] flex items-center justify-center shadow-[1.5px_1.5px_0px_rgba(0,0,0,0.15)] my-0.5">
-            <span className="text-white text-2xl sm:text-[26px] font-black tracking-tighter leading-none select-none">
-              14
-            </span>
-          </div>
-
-          {/* Uppercase STUDIO 14 subtitle */}
-          <span className="text-[8px] sm:text-[8.5px] font-extrabold tracking-[0.24em] text-[#1a2333] font-mono leading-none mt-0.5">
-            STUDIO 14
-          </span>
+          <img
+            src="/logo.png"
+            alt="Studio 14 Logo"
+            width={72}
+            height={107}
+            className="h-[84px] sm:h-[94px] md:h-[102px] w-auto object-contain"
+          />
         </a>
 
         {/* Center Navigation Links (Desktop) */}

@@ -1,12 +1,12 @@
 # Studio 14 Homepage
 
-A responsive, doodle-inspired creative agency homepage built with Next.js App Router, React, TypeScript, Tailwind CSS, Framer Motion, and Lucide icons.
+A responsive, doodle-inspired creative agency homepage built with Next.js App Router (powered by Turbopack), React, TypeScript, Tailwind CSS, Framer Motion, and Lucide icons.
 
 ## Run locally
 
 1. Install Node.js 20 or newer.
 2. In this folder, run `npm install`.
-3. Run `npm run dev`.
+3. Run `npm run dev` (starts Next.js with Turbopack).
 4. Open `http://localhost:3000`.
 
 ## Included
