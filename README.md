@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Studio 14 Homepage
 
-## Getting Started
+A responsive, doodle-inspired creative agency homepage built with Next.js App Router, React, TypeScript, Tailwind CSS, Framer Motion, and Lucide icons.
 
-First, run the development server:
+## Run locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Install Node.js 20 or newer.
+2. In this folder, run `npm install`.
+3. Run `npm run dev`.
+4. Open `http://localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Included
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Responsive navigation and mobile menu
+- Animated hero composition and scrolling marquee
+- Five service cards
+- Four-step brand storytelling process
+- Filterable portfolio concepts
+- Interactive industry moodboard / brand lab
+- Studio story, values, testimonials, and contact form UI
+- Responsive layouts and reduced-motion support
+- Basic SEO metadata
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Before launch
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Replace the concept portfolio cards and sample testimonials with approved client work/content.
+- The contact form currently demonstrates a local success state; connect `onSubmit` to a backend/API route and email provider to receive submissions.
+- Replace social profile URLs and add the studio's real contact details.
+- For production, consider self-hosting the fonts and run `npm run build` before deployment.
