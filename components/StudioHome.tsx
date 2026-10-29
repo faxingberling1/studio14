@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import Header from './Header';
 import Hero from './Hero';
+import Ribbon from './Ribbon';
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Asterisk, BarChart3, Check,
   ChevronDown, Code2, Dribbble, Heart, Instagram, Layers3, Lightbulb,
@@ -66,8 +67,7 @@ export default function StudioHome() {
       <div className="wallpaper" aria-hidden="true" />
       <Header />
       <Hero />
-
-      <section className="marquee" aria-label="Studio 14 creative services"><div className="marquee-track">{Array.from({ length: 2 }).map((_, i) => <span key={i}>MAKE GOOD THINGS <b>✳</b> BUILD BOLD BRANDS <b>✳</b> STAY A LITTLE CURIOUS <b>✳</b> CREATE WITH PURPOSE <b>✳</b></span>)}</div></section>
+      <Ribbon />
 
       <section className="section services-section wrap" id="services">
         <motion.div {...reveal}><SectionTitle eyebrow="A few things we’re good at" title={<>A good brand has <span className="scribble-underline">many sides.</span></>} text="One creative partner, all the right moving parts. We bring strategy, design, and digital together so everything feels like you." /></motion.div>
