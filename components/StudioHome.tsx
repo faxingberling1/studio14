@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import Header from './Header';
+import Hero from './Hero';
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Asterisk, BarChart3, Check,
   ChevronDown, Code2, Dribbble, Heart, Instagram, Layers3, Lightbulb,
@@ -64,32 +65,7 @@ export default function StudioHome() {
     <main>
       <div className="wallpaper" aria-hidden="true" />
       <Header />
-
-      <section className="hero wrap" id="home">
-        <div className="hero-copy">
-          <div className="tiny-note"><Sparkles size={14} /> A small studio for big ideas</div>
-          <h1>Your brand.<br /><span className="highlight highlight-yellow">Our creativity.</span><br /><span className="highlight highlight-blue">Real results.</span></h1>
-          <p className="hero-intro">We help brands find their flavour, show up with confidence, and create a digital presence people actually feel something about.</p>
-          <div className="hero-actions"><a className="button button-dark" href="#contact">Let’s make something <ArrowRight size={17} /></a><a className="play-link" href="#approach"><span><Play size={13} fill="currentColor" /></span> Meet our process</a></div>
-          <div className="hero-proof"><div><Zap size={17} /><span>Ideas with intention</span></div><i /><div><Heart size={17} /><span>People-first design</span></div><i /><div><BarChart3 size={17} /><span>Built for growth</span></div></div>
-          <Doodle className="hero-spark">✳</Doodle><Doodle className="hero-heart"><Heart /></Doodle>
-        </div>
-        <div className="hero-art">
-          <div className="art-blob" />
-          <Doodle className="orbit orbit-one">✦</Doodle><Doodle className="orbit orbit-two">✳</Doodle><Doodle className="orbit orbit-three"><Heart /></Doodle>
-          <div className="social-bubble instagram"><Instagram /></div><div className="social-bubble linked"><Linkedin /></div><div className="social-bubble dribble"><Dribbble /></div>
-          <div className="hero-note note-top">GOOD IDEAS<br />LIVE HERE <Heart size={14} /></div>
-          <motion.div className="hero-device" animate={reduceMotion ? {} : { y: [0, -8, 0], rotate: [-1, 0.5, -1] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}>
-            <div className="device-top"><span /><span /><span /><small>studio14.co</small></div>
-            <div className="device-screen"><div className="screen-logo">14<span>.</span></div><div className="screen-line" /><div className="screen-label">YOUR NEXT<br />CHAPTER STARTS HERE.</div><div className="screen-pill">LET’S CREATE ↗</div><div className="screen-sun">✳</div></div>
-            <div className="device-base" />
-          </motion.div>
-          <div className="hero-sticky"><span>01 / THE BIG IDEA</span><strong>Make them<br />feel something.</strong><ArrowUpRight size={20} /></div>
-          <div className="hero-pencil"><PenTool size={24} /><span>made with<br />curiosity</span></div>
-          <Doodle className="hero-dash">〰</Doodle>
-        </div>
-        <div className="hero-bottom-note"><span>SCROLL A LITTLE</span><ArrowDownRight size={17} /><span>THERE’S MORE TO THE STORY</span></div>
-      </section>
+      <Hero />
 
       <section className="marquee" aria-label="Studio 14 creative services"><div className="marquee-track">{Array.from({ length: 2 }).map((_, i) => <span key={i}>MAKE GOOD THINGS <b>✳</b> BUILD BOLD BRANDS <b>✳</b> STAY A LITTLE CURIOUS <b>✳</b> CREATE WITH PURPOSE <b>✳</b></span>)}</div></section>
 

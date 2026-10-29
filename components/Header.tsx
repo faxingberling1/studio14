@@ -30,22 +30,22 @@ export default function Header({ activeNav = 'Home', onNavClick }: HeaderProps) 
   };
 
   return (
-    <header className="relative w-full overflow-hidden bg-transparent pt-4 pb-3">
-      {/* Organic Pastel Doodle Blobs in Background (matching design) */}
+    <header className="relative w-full bg-transparent pt-3 sm:pt-4 pb-1 z-20">
+      {/* Corner Watercolor Blobs */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-8 -left-8 w-32 h-28 sm:w-40 sm:h-32 bg-[#fde382] rounded-[42%_58%_65%_35%/45%_48%_52%_55%] opacity-90 blur-[1px] -z-10"
+        className="pointer-events-none absolute -top-6 -left-8 w-36 h-32 sm:w-44 sm:h-36 bg-[#fed867] rounded-[42%_58%_65%_35%/45%_48%_52%_55%] opacity-90 -z-10"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-14 -left-6 w-24 h-24 sm:w-28 sm:h-28 bg-[#bfeaf8] rounded-[55%_45%_60%_40%/50%_65%_35%_50%] opacity-85 blur-[1px] -z-10"
+        className="pointer-events-none absolute top-16 -left-5 w-24 h-24 sm:w-28 sm:h-28 bg-[#bfeaf8] rounded-[55%_45%_60%_40%/50%_65%_35%_50%] opacity-85 -z-10"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-4 -right-6 w-24 h-24 bg-[#fedde7] rounded-[50%_50%_45%_55%/60%_40%_60%_40%] opacity-70 blur-[1px] -z-10"
+        className="pointer-events-none absolute top-2 -right-8 w-28 h-28 bg-[#fcd5e5]/50 rounded-full blur-xl -z-10"
       />
 
-      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 flex items-center justify-between">
+      <div className="max-w-[1240px] mx-auto px-6 sm:px-10 flex items-center justify-between">
         {/* Logo Section */}
         <a
           href="#home"
@@ -58,7 +58,7 @@ export default function Header({ activeNav = 'Home', onNavClick }: HeaderProps) 
             alt="Studio 14 Logo"
             width={72}
             height={107}
-            className="h-[84px] sm:h-[94px] md:h-[102px] w-auto object-contain"
+            className="h-[76px] sm:h-[84px] w-auto object-contain"
           />
         </a>
 
