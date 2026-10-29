@@ -5,20 +5,13 @@ import { motion, useReducedMotion } from 'framer-motion';
 import Header from './Header';
 import Hero from './Hero';
 import Ribbon from './Ribbon';
+import WhatWeDo from './WhatWeDo';
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Asterisk, BarChart3, Check,
   ChevronDown, Code2, Dribbble, Heart, Instagram, Layers3, Lightbulb,
   Linkedin, Menu, MousePointer2, Palette, PenTool, Play, Send, Sparkles,
   Target, TrendingUp, X, Zap, BookOpen,
 } from 'lucide-react';
-
-const services = [
-  { n: '01', title: 'Social media marketing', desc: 'Campaigns with a clear point of view—and a plan to turn attention into action.', tag: 'Make some noise', color: 'pink', icon: <Target /> },
-  { n: '02', title: 'Social media management', desc: 'Thoughtful content, consistent publishing, and a community that feels heard.', tag: 'Show up beautifully', color: 'mint', icon: <Layers3 /> },
-  { n: '03', title: 'UI / UX design', desc: 'Intuitive digital experiences that feel effortless to use and hard to forget.', tag: 'Make it click', color: 'blue', icon: <MousePointer2 /> },
-  { n: '04', title: 'Web development', desc: 'Fast, responsive websites built to tell your story and move your business forward.', tag: 'Built to grow', color: 'lilac', icon: <Code2 /> },
-  { n: '05', title: 'Graphics & brand artwork', desc: 'Distinctive visuals, brand systems, and creative assets with real personality.', tag: 'Look like you', color: 'yellow', icon: <PenTool /> },
-];
 
 const projects = [
   { title: 'The Good Table', category: 'Food & hospitality', type: 'Social campaign', color: 'project-peach', label: 'GOOD FOOD\nGOOD MOOD', mark: '✳' },
@@ -69,11 +62,7 @@ export default function StudioHome() {
       <Hero />
       <Ribbon />
 
-      <section className="section services-section wrap" id="services">
-        <motion.div {...reveal}><SectionTitle eyebrow="A few things we’re good at" title={<>A good brand has <span className="scribble-underline">many sides.</span></>} text="One creative partner, all the right moving parts. We bring strategy, design, and digital together so everything feels like you." /></motion.div>
-        <div className="service-grid">{services.map((service, i) => <motion.article className={`service-card ${service.color}`} key={service.n} {...reveal} transition={{ duration: 0.45, delay: i * 0.07 }}><div className="service-card-top"><span>{service.n} / 05</span><span className="service-icon">{service.icon}</span></div><h3>{service.title}</h3><p>{service.desc}</p><div className="service-card-bottom"><span>{service.tag}</span><a href="#contact" aria-label={`Ask about ${service.title}`}><ArrowUpRight size={18} /></a></div><span className="card-scribble">✳</span></motion.article>)}</div>
-        <div className="section-footnote"><span className="hand-note">Need a little bit of everything? <span>That’s kind of our thing.</span></span><a className="text-link" href="#contact">Let’s find your mix <ArrowRight size={16} /></a></div>
-      </section>
+      <WhatWeDo />
 
       <section className="approach-band" id="approach"><div className="wrap approach-wrap"><motion.div className="approach-intro" {...reveal}><span className="eyebrow"><span />THE WAY WE WORK<span /></span><h2>From “what if?”<br />to <span className="highlight highlight-yellow">“that’s so us.”</span></h2><p>We don’t believe in one-size-fits-all creative. We get to know your world first, then build something that belongs in it.</p><a className="button button-outline" href="#contact">Get to know us <ArrowRight size={16} /></a><Doodle className="approach-doodle">✎</Doodle></motion.div>
           <div className="approach-steps">{approach.map((item, i) => <motion.article className="approach-step" key={item.step} {...reveal} transition={{ duration: 0.45, delay: i * 0.09 }}><div className={`step-illustration step-${i + 1}`}><span>{item.icon}</span><b>{item.step}</b></div><span className="step-note">{item.note}</span><h3>{item.title}</h3><p>{item.text}</p>{i < approach.length - 1 && <ArrowRight className="step-arrow" size={23} />}</motion.article>)}</div>
