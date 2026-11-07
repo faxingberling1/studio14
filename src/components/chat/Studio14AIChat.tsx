@@ -12,6 +12,7 @@ import {
   Bot,
   User,
   MessageSquare,
+  BookOpen,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 
@@ -28,21 +29,22 @@ interface Message {
 }
 
 const INITIAL_CHIPS = [
+  "Browse Knowledge Base",
+  "Who owns the source code?",
+  "What is your 30-day bug warranty?",
   "Tell me about Web Development",
   "How does Video Editing work?",
-  "What automations do you build?",
   "How do we start a project?",
-  "What are typical timelines?",
 ];
 
 const WELCOME_MESSAGE: Message = {
   id: "welcome",
   sender: "ai",
-  text: "Hello! I am **Studio14 AI**, your autonomous guide to our creative studio. \n\nI can tell you about our core services, tools, timelines, and how we turn ideas into crafted digital experiences. What would you like to explore?",
+  text: "Hello! I am **Studio14 AI**, your autonomous guide to our creative studio. \n\nI can answer questions about our core disciplines (Web, Video, Marketing, Automations), or share guides from our **Knowledge Base** on IP ownership, 2-week sprints, and our 30-day bug warranty.",
   suggestedChips: INITIAL_CHIPS,
   actionLink: {
-    label: "Browse All Services Directory →",
-    href: "/services",
+    label: "Explore Knowledge Base & Guides →",
+    href: "/knowledge-base",
   },
   timestamp: "Just now",
 };
@@ -118,6 +120,22 @@ export const Studio14AIChat: React.FC = () => {
       setTimeout(() => inputRef.current?.focus(), 200);
     }
   }, [isOpen]);
+
+  // Wire up global open events (e.g. from Knowledge Base or CTA buttons)
+  useEffect(() => {
+    const handleOpenChat = (event: Event) => {
+      const customEvent = event as CustomEvent<{ query?: string }>;
+      setIsOpen(true);
+      if (customEvent.detail?.query) {
+        setTimeout(() => {
+          handleSendMessage(customEvent.detail.query);
+        }, 200);
+      }
+    };
+
+    window.addEventListener("open-studio14-ai-chat", handleOpenChat);
+    return () => window.removeEventListener("open-studio14-ai-chat", handleOpenChat);
+  }, []);
 
   const handleSendMessage = async (textToSend?: string) => {
     const query = (textToSend || inputValue).trim();
@@ -283,6 +301,14 @@ export const Studio14AIChat: React.FC = () => {
 
               {/* Header Actions */}
               <div className="flex items-center gap-1.5">
+                <Link
+                  href="/knowledge-base"
+                  title="Open Knowledge Base & Guides"
+                  aria-label="Open Knowledge Base"
+                  className="p-1.5 rounded-lg text-[#171717]/70 hover:text-[#171717] hover:bg-[#FAF9F6] transition-colors cursor-pointer"
+                >
+                  <BookOpen className="w-4 h-4" />
+                </Link>
                 <a
                   href="https://wa.me/971504974967?text=Hi%20Studio14%2C%20I%20would%20like%20to%20discuss%20a%20project!"
                   target="_blank"

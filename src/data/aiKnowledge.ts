@@ -343,6 +343,156 @@ export const studio14Knowledge: KnowledgeTopic[] = [
       href: "/portfolio",
     },
   },
+
+  // 9. Knowledge Base & Client Resource Center
+  {
+    id: "knowledge-base",
+    keywords: [
+      "knowledge",
+      "knowledge base",
+      "documentation",
+      "docs",
+      "guides",
+      "resource",
+      "resources",
+      "faq",
+      "faqs",
+      "learn",
+      "playbook",
+      "standards",
+      "protocols",
+    ],
+    title: "Studio14 Knowledge Base & Client Resource Center",
+    summary:
+      "Comprehensive, transparent client documentation covering engineering stacks, video pipelines, sprint cadences, and warranties.",
+    content: `The **Studio14 Knowledge Base** (available at **/knowledge-base**) serves as our open client handbook:
+
+• **Next.js & Shopify Architecture**: Why hand-coded modern stacks outperform bloated page builders with 95+ mobile Lighthouse scores.
+• **Video Post-Production Pipeline**: File transfer specs (ProRes/Log), -14 LUFS sound mastering, and 0–3 second retention hooks.
+• **The 2-Week Sprint Cadence**: Kickoff checkpoints, asynchronous Loom walkthroughs, and staged delivery milestones.
+• **Client IP & Code Ownership**: Complete copyright and GitHub repository transfer with zero licensing locks.
+• **30-Day Launch Bug Warranty**: Priority patches for any post-launch code defects at zero extra cost.
+• **Brand Deliverable Kits**: Vector SVGs, open-source font licenses, and responsive brand books.`,
+    suggestedFollowUps: [
+      "Who owns the source code?",
+      "What is your 30-day bug warranty?",
+      "How do revision rounds work?",
+    ],
+    actionLink: {
+      label: "Open Studio14 Knowledge Base →",
+      href: "/knowledge-base",
+    },
+  },
+
+  // 10. Client IP & Code Ownership
+  {
+    id: "ip-code-ownership",
+    keywords: [
+      "ip",
+      "intellectual property",
+      "code ownership",
+      "who owns the code",
+      "source code",
+      "github",
+      "repo",
+      "ownership",
+      "figma files",
+      "rights",
+      "license",
+      "lock-in",
+    ],
+    title: "100% Client Intellectual Property & Source Code Ownership",
+    summary:
+      "You own everything we build for you upon final invoice settlement.",
+    content: `At Studio14, our intellectual property policy is crystal clear: **You own 100% of what you pay for.**
+
+• **Complete Source Code Transfer**: Your GitHub repository is transferred directly to your organization upon final milestone payment.
+• **Full Design & Asset Ownership**: All Figma source files, vector SVGs, 4K video exports, and audio assets belong to you.
+• **Zero Vendor Lock-In**: We write modular, well-documented TypeScript and Tailwind CSS that any competent senior engineer can maintain.
+• **Independent Hosting Freedom**: Deploy freely on Vercel, AWS, Cloudflare, Shopify, or your private servers without agency restrictions.`,
+    suggestedFollowUps: [
+      "Tell me about the 30-day bug warranty",
+      "Visit the Knowledge Base",
+      "How do sprints work?",
+    ],
+    actionLink: {
+      label: "Read IP Policy in Knowledge Base →",
+      href: "/knowledge-base",
+    },
+  },
+
+  // 11. 30-Day Launch Bug Warranty
+  {
+    id: "bug-warranty",
+    keywords: [
+      "warranty",
+      "guarantee",
+      "bug warranty",
+      "30-day",
+      "30 day warranty",
+      "bugs",
+      "fixes",
+      "post launch",
+      "support",
+      "broken",
+      "defect",
+      "maintenance",
+    ],
+    title: "30-Day Post-Launch Technical Bug Warranty",
+    summary:
+      "Complimentary priority bug fixing for 30 days after your project goes live.",
+    content: `We stand firmly behind the quality of our engineering and creative builds:
+
+• **30-Day Coverage**: Starting on the official launch day of your website or digital application, any unexpected technical defect, display anomaly, or broken script is patched with top priority.
+• **Zero Extra Invoicing**: As long as the issue falls within the originally approved project scope, fixes are 100% free of charge.
+• **Multi-Device Compatibility**: Tested and guaranteed across modern iOS Safari, Android Chrome, MacOS, and Windows edge browsers.
+• **Ongoing Care Retainers**: Optional monthly maintenance retainers are available after the 30-day period for continuous feature updates.`,
+    suggestedFollowUps: [
+      "How do revision rounds work?",
+      "Who owns the source code?",
+      "Start a project with Studio14",
+    ],
+    actionLink: {
+      label: "View Warranties in Knowledge Base →",
+      href: "/knowledge-base",
+    },
+  },
+
+  // 12. Sprint Operations & Revision Protocols
+  {
+    id: "sprint-revisions",
+    keywords: [
+      "revisions",
+      "revision",
+      "rounds",
+      "sprint",
+      "two week sprint",
+      "review",
+      "feedback",
+      "loom",
+      "turnaround",
+      "how many revisions",
+      "changes",
+    ],
+    title: "2-Week Sprints & Revision Protocols",
+    summary:
+      "Structured collaboration with 2 revision rounds per milestone and async Loom walkthroughs.",
+    content: `To ensure projects launch on schedule without scope drag, Studio14 utilizes a disciplined sprint workflow:
+
+• **2 Structured Revision Rounds**: Each sprint milestone includes two formal rounds of consolidated feedback.
+• **Asynchronous Loom Demos**: We record clear, 3-minute video walkthroughs presenting our deliverables and reasoning.
+• **Private Staging Environments**: Test live Next.js builds on private staging URLs with your team before approving production deployment.
+• **Rapid Turnaround**: Feedback changes are implemented and re-submitted within 48–72 hours.`,
+    suggestedFollowUps: [
+      "What is the 30-day warranty?",
+      "Read full Knowledge Base",
+      "Schedule an alignment call",
+    ],
+    actionLink: {
+      label: "Explore Sprint Guides in Knowledge Base →",
+      href: "/knowledge-base",
+    },
+  },
 ];
 
 /**
@@ -362,10 +512,11 @@ export function generateStudio14AIResponse(query: string): {
       suggestedChips: [
         "Web Design & Development",
         "Video Editing",
-        "Marketing",
-        "Business Automations",
+        "Who owns the code?",
+        "30-Day Bug Warranty",
+        "Browse Knowledge Base",
       ],
-      actionLink: { label: "Explore Services Directory →", href: "/services" },
+      actionLink: { label: "Explore Knowledge Base & Guides →", href: "/knowledge-base" },
     };
   }
 
@@ -377,14 +528,15 @@ export function generateStudio14AIResponse(query: string): {
     normalized.length < 25
   ) {
     return {
-      text: "Hey there! Welcome to **Studio14**. We specialize in four core creative disciplines:\n\n1. **Website Design & Development** (Next.js, Shopify, WordPress)\n2. **Video Editing** (YouTube, Shorts, Brand Films)\n3. **Marketing** (Organic, Paid, SEO)\n4. **Business Automations** (Sales Funnels, Zapier/Make)\n\nWhich area would you like to explore?",
+      text: "Hey there! Welcome to **Studio14**. We specialize in four core creative disciplines:\n\n1. **Website Design & Development** (Next.js, Shopify, WordPress)\n2. **Video Editing** (YouTube, Shorts, Brand Films)\n3. **Marketing** (Organic, Paid, SEO)\n4. **Business Automations** (Sales Funnels, Zapier/Make)\n\nYou can also explore our **Knowledge Base** for detailed guides on our 2-week sprints, 30-day bug warranties, and code ownership.",
       suggestedChips: [
+        "Browse Knowledge Base",
         "Tell me about Web Development",
-        "Tell me about Video Editing",
-        "How do Automations work?",
+        "Who owns the source code?",
+        "What is your 30-day warranty?",
         "How to start a project?",
       ],
-      actionLink: { label: "View All Services →", href: "/services" },
+      actionLink: { label: "Open Knowledge Base →", href: "/knowledge-base" },
     };
   }
 

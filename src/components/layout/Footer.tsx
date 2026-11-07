@@ -100,6 +100,7 @@ export const Footer: React.FC = () => {
                 { label: "About Studio14", href: "/#about" },
                 { label: "Our Work", href: "/#portfolio" },
                 { label: "Creative Process", href: "/#process" },
+                { label: "Knowledge Base", href: "/knowledge-base" },
                 { label: "Legal Portal", href: "/legal" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
@@ -252,6 +253,12 @@ export const Footer: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2 text-xs">
+            <Link
+              href="/knowledge-base"
+              className="hover:text-[#FFC928] transition-colors"
+            >
+              Knowledge Base
+            </Link>
             <Link
               href="/legal"
               className="hover:text-[#FFC928] transition-colors"
