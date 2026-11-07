@@ -38,7 +38,7 @@ export const JourneyProgress: React.FC<JourneyProgressProps> = ({
   const progressPercent = ((currentStageIndex + 1) / growthStagesData.length) * 100;
 
   return (
-    <div className="w-full bg-[#FAF9F6]/95 backdrop-blur-md border-b-2 border-[#171717] py-2 sm:py-2.5 px-3 sm:px-6 sticky top-16 z-30 shadow-sm transition-all">
+    <div className="w-full bg-[#FAF9F6] border-b-2 border-[#171717] py-2 sm:py-2.5 px-3 sm:px-6 sticky top-[72px] sm:top-[80px] lg:top-[84px] z-30 shadow-[0_4px_12px_rgba(23,23,23,0.06)] transition-all">
       <div className="max-w-7xl mx-auto space-y-2">
         {/* ========================================================
             ROW 1: Active Stage Context + Prev/Next Buttons + Progress Bar

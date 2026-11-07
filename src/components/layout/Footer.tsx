@@ -95,6 +95,7 @@ export const Footer: React.FC = () => {
               {[
                 { label: "Home", href: "/#home" },
                 { label: "Our Services", href: "/#services" },
+                { label: "Case Studies", href: "/case-studies" },
                 { label: "Growth Journey", href: "/growth-journey" },
                 { label: "About Studio14", href: "/#about" },
                 { label: "Our Work", href: "/#portfolio" },

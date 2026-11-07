@@ -20,7 +20,7 @@ export const JourneyRoadmap: React.FC<JourneyRoadmapProps> = ({
   onSelectStage,
 }) => {
   return (
-    <div id="journey-roadmap" className="relative py-12 px-4 sm:px-6 bg-gradient-to-b from-[#FFFDF5] via-white to-[#FAF9F6] border-b-2 border-charcoal/15 overflow-hidden scroll-mt-24">
+    <div id="journey-roadmap" className="relative pt-8 pb-5 sm:pt-10 sm:pb-6 px-4 sm:px-6 bg-gradient-to-b from-[#FFFDF5] via-white to-[#FAF9F6] border-b-2 border-charcoal/15 overflow-hidden scroll-mt-24">
       {/* Background Motifs */}
       <div className="absolute top-4 left-6 pointer-events-none opacity-20">
         <FloralOrnament variant="rose" size={60} />
@@ -171,7 +171,7 @@ export const JourneyRoadmap: React.FC<JourneyRoadmapProps> = ({
         </div>
 
         {/* Moving Truck Graphic Banner */}
-        <div className="mt-8 p-4 rounded-xl bg-charcoal text-white border-2 border-charcoal flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
+        <div className="mt-5 p-3.5 sm:p-4 rounded-xl bg-charcoal text-white border-2 border-charcoal flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-lg bg-brand-yellow text-charcoal flex items-center justify-center font-black border border-white/20 shrink-0">
               <span className="font-serif text-lg">S14</span>

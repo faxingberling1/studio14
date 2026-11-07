@@ -33,7 +33,7 @@ const SECTION_IDS = [
   "process",
   "testimonials",
   "insights",
-  "careers",
+  "case-studies",
   "faq",
   "contact",
 ];
@@ -82,9 +82,9 @@ export const Navbar: React.FC = () => {
     { label: "Services", href: "/services", id: "services", hasDropdown: true },
     { label: "Growth Journey", href: "/growth-journey", id: "growth-journey" },
     { label: "Portfolio", href: "/#portfolio", id: "portfolio" },
+    { label: "Case Studies", href: "/case-studies", id: "case-studies" },
     { label: "About", href: "/#about", id: "about" },
     { label: "Insights", href: "/#insights", id: "insights" },
-    { label: "Careers", href: "/#careers", id: "careers" },
   ];
 
   const isItemActive = (id: string) => {

@@ -19,9 +19,9 @@ const navLinks = [
   { label: "Growth Journey", href: "/growth-journey", id: "growth-journey" },
   { label: "All Services", href: "/services", id: "services" },
   { label: "Portfolio", href: "/#portfolio", id: "portfolio" },
+  { label: "Case Studies", href: "/case-studies", id: "case-studies" },
   { label: "About", href: "/#about", id: "about" },
   { label: "Insights", href: "/#insights", id: "insights" },
-  { label: "Careers", href: "/#careers", id: "careers" },
 ];
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({

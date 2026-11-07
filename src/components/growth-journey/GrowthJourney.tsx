@@ -73,7 +73,7 @@ export const GrowthJourney: React.FC = () => {
       />
 
       {/* 4. Active Stage Detail Panel & Interactive Showcase Component */}
-      <div ref={detailRef} className="scroll-mt-36">
+      <div ref={detailRef} className="scroll-mt-[175px] sm:scroll-mt-[190px] lg:scroll-mt-[200px]">
         <StageDetailPanel
           stage={growthStagesData[currentStageIndex]}
           currentIndex={currentStageIndex}
