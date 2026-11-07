@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <rect width="900" height="620" fill="#F4EFE7"/>
+  <!-- 3-Frame Storyboard Layout -->
+  <rect x="64" y="88" width="240" height="310" rx="16" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="84" y="112" width="200" height="180" rx="10" fill="#FFC928" fill-opacity="0.3" stroke="#171717" stroke-width="2"/>
+  <path d="M134 210C154 160 214 160 234 210" stroke="#171717" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="184" cy="176" r="22" fill="#FAF9F6" stroke="#171717" stroke-width="2.5"/>
+  <text x="84" y="330" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">01. Visual Hook</text>
+  <text x="84" y="356" fill="#666666" font-family="sans-serif" font-size="14">0:00 - 0:03 Retention</text>
+
+  <rect x="330" y="68" width="240" height="330" rx="16" fill="#171717"/>
+  <rect x="322" y="60" width="240" height="330" rx="16" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="342" y="84" width="200" height="196" rx="10" fill="#F28C5A" fill-opacity="0.25" stroke="#171717" stroke-width="2"/>
+  <polygon points="426,158 426,206 466,182" fill="#171717"/>
+  <path d="M366 130L390 118M500 130L518 148M372 242L402 252" stroke="#171717" stroke-width="3" stroke-linecap="round"/>
+  <text x="342" y="320" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">02. Doodle Motion</text>
+  <text x="342" y="346" fill="#666666" font-family="sans-serif" font-size="14">Hand-drawn frame overlays</text>
+
+  <rect x="596" y="88" width="240" height="310" rx="16" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="616" y="112" width="200" height="180" rx="10" fill="#6BA3E8" fill-opacity="0.25" stroke="#171717" stroke-width="2"/>
+  <rect x="646" y="178" width="140" height="44" rx="22" fill="#FFC928" stroke="#171717" stroke-width="2.5"/>
+  <text x="676" y="205" fill="#171717" font-family="sans-serif" font-size="14" font-weight="bold">ACTION CTA</text>
+  <text x="616" y="330" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">03. Conversion Cut</text>
+  <text x="616" y="356" fill="#666666" font-family="sans-serif" font-size="14">Multi-platform export</text>
+
+  <!-- Soundwave Pill at Bottom -->
+  <rect x="64" y="446" width="772" height="104" rx="16" fill="#171717"/>
+  <text x="104" y="505" fill="#FAF9F6" font-family="Georgia, serif" font-size="22" font-weight="bold">Mixed-Media Promo &amp; Social Video System</text>
+  <rect x="644" y="476" width="156" height="44" rx="22" fill="#FFC928"/>
+  <text x="676" y="504" fill="#171717" font-family="sans-serif" font-size="14" font-weight="bold">60 FPS • 4K</text>
+</svg>
+

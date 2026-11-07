@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "animate.css";
+
+:root {
+  --font-dm-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-playfair: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-caveat: "Caveat", "Segoe Print", cursive, sans-serif;
+  --bg-primary: #FAF9F6;
+  --bg-warm: #F4F1EA;
+  --text-primary: #171717;
+  --text-secondary: #666666;
+  --accent-yellow: #FFC928;
+  --accent-orange: #F28C5A;
+  --accent-blue: #6BA3E8;
+  --accent-lavender: #A695E7;
+  --footer-dark: #202020;
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+    font-family: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    selection-background-color: #FFC928;
+    selection-color: #171717;
+  }
+
+  ::selection {
+    background-color: #FFC928;
+    color: #171717;
+  }
+}
+
+.font-sans {
+  font-family: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+}
+
+.font-display,
+.font-editorial {
+  font-family: var(--font-playfair), Georgia, Cambria, "Times New Roman", serif;
+}
+
+.font-hand {
+  font-family: var(--font-caveat), cursive, sans-serif;
+}
+
+/* Continuous subtle CSS keyframes for doodle accents */
+@keyframes doodleFloatSlow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+}
+
+@keyframes doodlePulseSoft {
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+.doodle-float {
+  animation: doodleFloatSlow 5s ease-in-out infinite;
+}
+
+.doodle-pulse {
+  animation: doodlePulseSoft 3.5s ease-in-out infinite;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

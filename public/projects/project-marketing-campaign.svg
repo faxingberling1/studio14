@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <rect width="900" height="620" fill="#F2EFE9"/>
+  <!-- Workflow Automation & Campaign Map -->
+  <!-- Node 1: Creative Ad Hook -->
+  <rect x="78" y="114" width="220" height="160" rx="14" fill="#171717"/>
+  <rect x="70" y="106" width="220" height="160" rx="14" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="94" y="130" width="90" height="24" rx="12" fill="#FFC928" stroke="#171717" stroke-width="1.5"/>
+  <text x="108" y="147" fill="#171717" font-family="sans-serif" font-size="12" font-weight="bold">01. CAMPAIGN</text>
+  <text x="94" y="186" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">Creative Ad Hook</text>
+  <rect x="94" y="204" width="160" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+  <rect x="94" y="222" width="130" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+
+  <!-- Node 2: Landing Page & SEO -->
+  <rect x="352" y="234" width="220" height="160" rx="14" fill="#171717"/>
+  <rect x="344" y="226" width="220" height="160" rx="14" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="368" y="250" width="90" height="24" rx="12" fill="#6BA3E8" stroke="#171717" stroke-width="1.5"/>
+  <text x="382" y="267" fill="#171717" font-family="sans-serif" font-size="12" font-weight="bold">02. FUNNEL</text>
+  <text x="368" y="306" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">Landing &amp; SEO</text>
+  <rect x="368" y="324" width="160" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+  <rect x="368" y="342" width="130" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+
+  <!-- Node 3: Automated CRM & Follow-up -->
+  <rect x="624" y="114" width="210" height="160" rx="14" fill="#171717"/>
+  <rect x="616" y="106" width="210" height="160" rx="14" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <rect x="640" y="130" width="110" height="24" rx="12" fill="#A695E7" stroke="#171717" stroke-width="1.5"/>
+  <text x="652" y="147" fill="#171717" font-family="sans-serif" font-size="12" font-weight="bold">03. AUTOMATION</text>
+  <text x="640" y="186" fill="#171717" font-family="Georgia, serif" font-size="20" font-weight="bold">CRM &amp; Webhook</text>
+  <rect x="640" y="204" width="150" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+  <rect x="640" y="222" width="120" height="8" rx="4" fill="#666666" fill-opacity="0.35"/>
+
+  <!-- Connecting Hand-Drawn Arrows -->
+  <path d="M290 186C325 186 315 280 344 294" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M564 294C595 294 585 190 616 186" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+
+  <!-- Bottom Campaign Storyboard Strip -->
+  <rect x="70" y="438" width="756" height="114" rx="14" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <circle cx="130" cy="495" r="30" fill="#FFC928" stroke="#171717" stroke-width="2.5"/>
+  <path d="M118 495L127 504L144 486" stroke="#171717" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="182" y="488" fill="#171717" font-family="Georgia, serif" font-size="22" font-weight="bold">Unified Creative + Automation Pipeline</text>
+  <text x="182" y="516" fill="#666666" font-family="sans-serif" font-size="15">Organic SEO • Paid Social Creative • Automated Lead Routing</text>
+</svg>
+

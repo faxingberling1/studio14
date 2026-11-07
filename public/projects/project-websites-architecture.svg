@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <rect width="900" height="620" fill="#F4F1EA"/>
+  <!-- Architectural Blueprint Grid -->
+  <rect x="70" y="60" width="760" height="500" rx="16" fill="#FAF9F6" stroke="#171717" stroke-width="3"/>
+  <line x1="70" y1="120" x2="830" y2="120" stroke="#171717" stroke-width="2"/>
+  <text x="104" y="98" fill="#171717" font-family="Georgia, serif" font-size="22" font-weight="bold">FORMA ARCHIVE — INDEX 14</text>
+  <rect x="680" y="76" width="120" height="28" rx="14" fill="#FFC928" stroke="#171717" stroke-width="2"/>
+  <!-- Asymmetric Grid Inside -->
+  <rect x="104" y="152" width="410" height="260" rx="10" fill="#EFECE4" stroke="#171717" stroke-width="2.5"/>
+  <!-- Architectural Wireframe Sketch -->
+  <path d="M160 360L260 200L380 240L450 360Z" fill="#FFC928" fill-opacity="0.25" stroke="#171717" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="260" y1="200" x2="260" y2="360" stroke="#171717" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="140" y1="360" x2="480" y2="360" stroke="#171717" stroke-width="3"/>
+  <!-- Right Editorial Column -->
+  <text x="546" y="186" fill="#171717" font-family="Georgia, serif" font-size="28" font-weight="bold">Spatial Rhythm</text>
+  <text x="546" y="220" fill="#171717" font-family="Georgia, serif" font-size="28" font-weight="bold">&amp; Structure</text>
+  <path d="M546 234H690" stroke="#FFC928" stroke-width="6" stroke-linecap="round"/>
+  <rect x="546" y="258" width="230" height="10" rx="5" fill="#666666" fill-opacity="0.35"/>
+  <rect x="546" y="278" width="200" height="10" rx="5" fill="#666666" fill-opacity="0.35"/>
+  <rect x="546" y="320" width="240" height="92" rx="10" fill="#F4EFE6" stroke="#171717" stroke-width="2"/>
+  <text x="568" y="360" fill="#171717" font-family="monospace" font-size="15">ELEVATION 02 • NORTH</text>
+  <text x="568" y="386" fill="#666666" font-family="sans-serif" font-size="14">Interactive SVG Annotations</text>
+  <!-- Bottom Metadata Bar -->
+  <rect x="104" y="440" width="682" height="84" rx="10" fill="#171717"/>
+  <text x="134" y="488" fill="#FAF9F6" font-family="Georgia, serif" font-size="20">Next.js App Router • Smooth Page Transitions • Editorial Grid</text>
+  <circle cx="742" cy="482" r="18" fill="#FFC928"/>
+</svg>
+
