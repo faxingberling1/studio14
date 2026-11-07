@@ -36,7 +36,7 @@ const packages: PackageTier[] = [
     id: "brand-launch",
     name: "Brand Foundation Sprint",
     tagline: "Give your venture an identity worth remembering.",
-    stageFocus: "Stage 01 Focus",
+    stageFocus: "Stage 01",
     idealFor: "Startups & founders needing complete brand identity & positioning.",
     timeline: "2 – 3 Weeks",
     popular: false,
@@ -58,7 +58,7 @@ const packages: PackageTier[] = [
     id: "digital-flagship",
     name: "Digital Flagship Suite",
     tagline: "Establish your custom high-performance digital presence.",
-    stageFocus: "Stages 01 + 02 Focus",
+    stageFocus: "Stages 01 + 02",
     idealFor: "Businesses ready to stand out online and convert visitors into buyers.",
     timeline: "4 – 6 Weeks",
     popular: false,
@@ -80,9 +80,9 @@ const packages: PackageTier[] = [
     id: "growth-engine",
     name: "Full Growth Engine",
     tagline: "The complete 6-stage turnkey venture development partnership.",
-    stageFocus: "Stages 01 – 06 Complete",
+    stageFocus: "Stages 01 – 06",
     idealFor: "High-ambition companies seeking an end-to-end partner to build & scale.",
-    timeline: "8 – 12 Weeks + Ongoing",
+    timeline: "8 – 12 Weeks",
     popular: true,
     accentColor: "#E11D48",
     deliverablesSummary: "Brand + Flagship Web + Ad Studio + Funnels + Automations",
@@ -103,9 +103,9 @@ const packages: PackageTier[] = [
     id: "creative-retainer",
     name: "Performance & Creative Engine",
     tagline: "Continuous creative ad production and conversion optimization.",
-    stageFocus: "Stages 03 – 05 Focus",
+    stageFocus: "Stages 03–05",
     idealFor: "Established brands with an active site looking to scale sales & leads.",
-    timeline: "Monthly Dedicated Retainer",
+    timeline: "Monthly",
     popular: false,
     accentColor: "#10B981",
     deliverablesSummary: "Monthly Video/Static Ad Batches + Funnel Optimization",
@@ -145,7 +145,7 @@ export const Packages: React.FC = () => {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#package-cards"
-            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-brand-yellow hover:bg-[#ffbe0b] text-charcoal font-bold text-sm shadow-[0_4px_0_0_#171717] hover:shadow-[0_2px_0_0_#171717] hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 border-2 border-charcoal"
+            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#FFC928] hover:bg-[#ffbe0b] text-[#171717] font-bold text-sm shadow-[0_4px_0_0_#171717] hover:shadow-[0_2px_0_0_#171717] hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 border-2 border-[#171717]"
           >
             <span>View Studio14 Packages</span>
             <ArrowDown className="w-4 h-4" />
@@ -153,69 +153,69 @@ export const Packages: React.FC = () => {
 
           <a
             href="#contact"
-            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white hover:bg-cream text-charcoal font-semibold text-sm border-2 border-charcoal/30 hover:border-charcoal transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white hover:bg-[#FAF9F6] text-[#171717] font-semibold text-sm border-2 border-[#171717]/40 hover:border-[#171717] shadow-sm transition-all flex items-center justify-center gap-2"
           >
-            <Sparkles className="w-4 h-4 text-brand-yellow" />
+            <Sparkles className="w-4 h-4 text-[#FFC928]" />
             <span>Schedule a Free Consultation</span>
           </a>
         </div>
       </div>
 
       {/* 2. THE PACKAGES GRID */}
-      <div id="package-cards" className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div id="package-cards" className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4.5 xl:gap-6 items-stretch">
           {packages.map((pkg) => (
             <div
               key={pkg.id}
-              className={`relative rounded-3xl p-6 bg-white border-2 flex flex-col justify-between transition-all duration-300 ${
+              className={`relative rounded-3xl p-5 xl:p-6 bg-white border-2 flex flex-col justify-between transition-all duration-300 ${
                 pkg.popular
-                  ? "border-charcoal shadow-[0_10px_0_0_#171717] lg:-translate-y-3 ring-2 ring-brand-yellow"
-                  : "border-charcoal/20 hover:border-charcoal shadow-[0_6px_0_0_#171717]/40 hover:shadow-[0_8px_0_0_#171717]"
+                  ? "border-[#171717] shadow-[0_10px_0_0_#171717] lg:-translate-y-3 ring-2 ring-[#FFC928] pt-10"
+                  : "border-[#171717]/20 hover:border-[#171717] shadow-[0_6px_0_0_#171717]/40 hover:shadow-[0_8px_0_0_#171717] pt-7.5"
               }`}
             >
               {/* Popular Badge */}
               {pkg.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-charcoal text-brand-yellow px-4 py-1 rounded-full text-xs font-mono font-black border-2 border-brand-yellow shadow-md flex items-center gap-1.5 uppercase tracking-wider">
-                  <Flame className="w-3.5 h-3.5 text-brand-yellow fill-brand-yellow" />
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#171717] text-[#FFC928] px-3.5 py-1 rounded-full text-[11px] font-mono font-black border-2 border-[#FFC928] shadow-[2px_2px_0px_#171717] flex items-center gap-1.5 uppercase tracking-wider whitespace-nowrap z-10">
+                  <Flame className="w-3.5 h-3.5 text-[#FFC928] fill-[#FFC928]" />
                   <span>Most Comprehensive</span>
                 </div>
               )}
 
               <div>
                 {/* Header Tag & Stage */}
-                <div className="flex items-center justify-between gap-2 mb-3">
+                <div className="flex items-center justify-between gap-1.5 mb-4">
                   <span
-                    className="text-[10px] font-mono font-black uppercase px-2.5 py-0.5 rounded-md border border-charcoal text-charcoal shadow-sm"
+                    className="text-[10px] sm:text-[10.5px] font-mono font-black uppercase px-2 py-0.5 rounded-md border-2 border-[#171717] text-[#171717] shadow-[1px_1px_0px_#171717] whitespace-nowrap shrink-0"
                     style={{ backgroundColor: pkg.accentColor }}
                   >
                     {pkg.stageFocus}
                   </span>
-                  <div className="flex items-center gap-1 text-[11px] font-semibold text-muted-gray">
-                    <Clock className="w-3 h-3" />
+                  <div className="flex items-center gap-1 text-[11px] font-semibold text-[#666666] whitespace-nowrap shrink-0">
+                    <Clock className="w-3 h-3 text-[#171717]" />
                     <span>{pkg.timeline}</span>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-serif font-black text-charcoal leading-tight">
+                <h3 className="text-xl font-serif font-black text-[#171717] leading-snug">
                   {pkg.name}
                 </h3>
-                <p className="text-xs text-charcoal/70 mt-2 leading-relaxed">
+                <p className="text-xs text-[#171717]/70 mt-2 leading-relaxed">
                   {pkg.tagline}
                 </p>
 
                 {/* Scope Highlight */}
-                <div className="mt-4 p-2.5 rounded-xl bg-cream border border-charcoal/15 text-[11px] font-semibold text-charcoal/90">
-                  <span className="font-mono text-muted-gray block text-[10px] uppercase">Core Artifact</span>
+                <div className="mt-4 p-3 rounded-xl bg-[#F4F1EA] border border-[#171717]/15 text-[11px] font-semibold text-[#171717]/90">
+                  <span className="font-mono text-[#666666] block text-[10px] uppercase">Core Artifact</span>
                   {pkg.deliverablesSummary}
                 </div>
 
                 {/* Features List */}
-                <div className="mt-6 space-y-2.5 pt-4 border-t border-charcoal/10">
-                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-charcoal/60 block">
+                <div className="mt-6 space-y-2.5 pt-4 border-t border-[#171717]/10">
+                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#171717]/60 block">
                     What&apos;s Included
                   </span>
                   {pkg.features.map((feat, idx) => (
-                    <div key={idx} className="flex items-start gap-2 text-xs text-charcoal/80 leading-snug">
+                    <div key={idx} className="flex items-start gap-2 text-xs text-[#171717]/85 leading-snug">
                       <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 border border-emerald-400">
                         <Check className="w-3 h-3 stroke-[3]" />
                       </span>
@@ -226,13 +226,13 @@ export const Packages: React.FC = () => {
               </div>
 
               {/* Card Footer / Action */}
-              <div className="mt-8 pt-4 border-t border-charcoal/10">
+              <div className="mt-8 pt-4 border-t border-[#171717]/10">
                 <a
                   href="#contact"
-                  className={`w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 border-2 ${
+                  className={`w-full py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 border-2 ${
                     pkg.popular
-                      ? "bg-brand-yellow hover:bg-[#ffbe0b] text-charcoal border-charcoal shadow-[0_3px_0_0_#171717]"
-                      : "bg-charcoal hover:bg-black text-white border-charcoal shadow-sm"
+                      ? "bg-[#FFC928] hover:bg-[#ffbe0b] text-[#171717] border-[#171717] shadow-[0_3px_0_0_#171717]"
+                      : "bg-[#171717] hover:bg-black text-white border-[#171717] shadow-sm"
                   }`}
                 >
                   <span>{pkg.ctaText}</span>

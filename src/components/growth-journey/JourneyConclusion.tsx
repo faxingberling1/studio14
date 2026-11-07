@@ -51,32 +51,32 @@ export const JourneyConclusion: React.FC = () => {
         </div>
 
         {/* Two Flexible Engagement Models */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Option 1: Full Lifecycle */}
-          <div className="relative p-6 sm:p-8 rounded-3xl bg-white border-2 border-charcoal shadow-[0_6px_0_0_#171717] hover:shadow-[0_10px_0_0_#171717] transition-all flex flex-col justify-between group">
-            <div className="absolute -top-3 right-6 bg-brand-yellow text-charcoal px-3 py-1 rounded-full text-xs font-mono font-black border border-charcoal shadow-sm">
+          <div className="relative p-6 sm:p-8 rounded-3xl bg-white border-2 border-[#171717] shadow-[0_6px_0_0_#171717] hover:shadow-[0_10px_0_0_#171717] transition-all flex flex-col justify-between group pt-8">
+            <div className="absolute -top-3.5 right-6 bg-[#FFC928] text-[#171717] px-3.5 py-1 rounded-full text-xs font-mono font-black border-2 border-[#171717] shadow-[2px_2px_0px_#171717] uppercase tracking-wider whitespace-nowrap">
               MOST COMPREHENSIVE
             </div>
 
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-brand-yellow/30 border border-charcoal flex items-center justify-center font-serif font-bold text-xl text-charcoal mb-4 shadow-[0_2px_0_0_#171717]">
-                01-06
+              <div className="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-[#FFC928]/30 border-2 border-[#171717] font-mono font-black text-sm text-[#171717] mb-4 shadow-[2px_2px_0px_#171717] whitespace-nowrap">
+                STAGES 01 – 06
               </div>
-              <h3 className="text-xl font-serif font-bold text-charcoal">
-                Full-Stack Business Launch & Scale
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#171717]">
+                Full-Stack Business Launch &amp; Scale
               </h3>
-              <p className="text-sm text-muted-gray mt-2 leading-relaxed">
+              <p className="text-sm text-[#666666] mt-2 leading-relaxed font-sans">
                 We act as your dedicated executive studio team. From raw concept to brand foundation, flagship web application, ad creatives, performance funnels, CRM setup, and automated back-office workflows.
               </p>
 
-              <div className="mt-6 space-y-2.5 pt-4 border-t border-charcoal/10">
+              <div className="mt-6 space-y-2.5 pt-4 border-t border-[#171717]/10">
                 {[
                   "Complete 6-stage turnkey execution",
                   "Dedicated creative director & lead engineer",
                   "Unified brand, product & acquisition architecture",
                   "Ongoing iterative growth sprints",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2.5 text-xs text-charcoal/80 font-medium">
+                  <div key={i} className="flex items-center gap-2.5 text-xs text-[#171717]/90 font-medium">
                     <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 border border-emerald-400">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </span>
@@ -86,10 +86,10 @@ export const JourneyConclusion: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-charcoal/10">
+            <div className="mt-8 pt-4 border-t border-[#171717]/10">
               <a
                 href="#packages"
-                className="w-full py-3 px-4 rounded-xl bg-charcoal hover:bg-black text-white font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-sm"
+                className="w-full py-3.5 px-4 rounded-xl bg-[#171717] hover:bg-black text-white font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-sm"
               >
                 <span>Explore Full Studio Packages</span>
                 <ArrowRight className="w-4 h-4" />
@@ -98,30 +98,30 @@ export const JourneyConclusion: React.FC = () => {
           </div>
 
           {/* Option 2: Modular Sprints */}
-          <div className="relative p-6 sm:p-8 rounded-3xl bg-white border-2 border-charcoal shadow-[0_6px_0_0_#171717] hover:shadow-[0_10px_0_0_#171717] transition-all flex flex-col justify-between group">
-            <div className="absolute -top-3 right-6 bg-cream text-charcoal px-3 py-1 rounded-full text-xs font-mono font-bold border border-charcoal shadow-sm">
-              FLEXIBLE & FAST
+          <div className="relative p-6 sm:p-8 rounded-3xl bg-white border-2 border-[#171717] shadow-[0_6px_0_0_#171717] hover:shadow-[0_10px_0_0_#171717] transition-all flex flex-col justify-between group pt-8">
+            <div className="absolute -top-3.5 right-6 bg-[#FAF9F6] text-[#171717] px-3.5 py-1 rounded-full text-xs font-mono font-bold border-2 border-[#171717] shadow-[2px_2px_0px_#171717] uppercase tracking-wider whitespace-nowrap">
+              FLEXIBLE &amp; FAST
             </div>
 
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-sky-100 border border-charcoal flex items-center justify-center font-serif font-bold text-xl text-charcoal mb-4 shadow-[0_2px_0_0_#171717]">
-                S1-6
+              <div className="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-sky-100 border-2 border-[#171717] font-mono font-black text-sm text-[#171717] mb-4 shadow-[2px_2px_0px_#171717] whitespace-nowrap">
+                TARGETED SPRINTS
               </div>
-              <h3 className="text-xl font-serif font-bold text-charcoal">
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#171717]">
                 Targeted Stage Accelerators
               </h3>
-              <p className="text-sm text-muted-gray mt-2 leading-relaxed">
+              <p className="text-sm text-[#666666] mt-2 leading-relaxed font-sans">
                 Already have an established business, brand identity, or website? We parachute in to solve the specific bottlenecks holding back your scalability—whether that is high-converting ad creative, modern web engineering, or automated operations.
               </p>
 
-              <div className="mt-6 space-y-2.5 pt-4 border-t border-charcoal/10">
+              <div className="mt-6 space-y-2.5 pt-4 border-t border-[#171717]/10">
                 {[
                   "Choose any single milestone (e.g. Stage 01, 02, or 04)",
                   "Fixed scope, rapid turnaround sprints (2-4 weeks)",
                   "Direct handoff with thorough documentation",
                   "Seamless integration into your existing systems",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2.5 text-xs text-charcoal/80 font-medium">
+                  <div key={i} className="flex items-center gap-2.5 text-xs text-[#171717]/90 font-medium">
                     <span className="w-4 h-4 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center shrink-0 border border-sky-400">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </span>
@@ -131,10 +131,10 @@ export const JourneyConclusion: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-charcoal/10">
+            <div className="mt-8 pt-4 border-t border-[#171717]/10">
               <a
                 href="#contact"
-                className="w-full py-3 px-4 rounded-xl bg-brand-yellow hover:bg-[#ffbe0b] text-charcoal font-bold text-sm transition-all border-2 border-charcoal flex items-center justify-center gap-2 shadow-[0_2px_0_0_#171717]"
+                className="w-full py-3.5 px-4 rounded-xl bg-[#FFC928] hover:bg-[#ffbe0b] text-[#171717] font-bold text-sm transition-all border-2 border-[#171717] flex items-center justify-center gap-2 shadow-[0_2px_0_0_#171717]"
               >
                 <span>Commission a Modular Sprint</span>
                 <ArrowRight className="w-4 h-4" />
