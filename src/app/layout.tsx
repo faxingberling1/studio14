@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SmoothScrollProvider } from "@/components/animations/SmoothScrollProvider";
 import { Studio14AIChat } from "@/components/chat/Studio14AIChat";
 import { ContentProtection } from "@/components/common/ContentProtection";
+import { CookieConsent } from "@/components/common/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio14.creative"),
@@ -132,6 +133,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <Studio14AIChat />
+          <CookieConsent />
         </SmoothScrollProvider>
       </body>
     </html>

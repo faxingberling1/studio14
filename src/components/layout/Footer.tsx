@@ -95,12 +95,11 @@ export const Footer: React.FC = () => {
               {[
                 { label: "Home", href: "/#home" },
                 { label: "Our Services", href: "/#services" },
+                { label: "Growth Journey", href: "/growth-journey" },
                 { label: "About Studio14", href: "/#about" },
                 { label: "Our Work", href: "/#portfolio" },
                 { label: "Creative Process", href: "/#process" },
-                { label: "Insights & Notes", href: "/#insights" },
-                { label: "Careers", href: "/#careers" },
-                { label: "FAQs", href: "/#faq" },
+                { label: "Legal Portal", href: "/legal" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
@@ -251,24 +250,24 @@ export const Footer: React.FC = () => {
             </a>
           </p>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2 text-xs">
             <Link
-              href="/about"
+              href="/legal"
               className="hover:text-[#FFC928] transition-colors"
             >
-              Studio Ethos
+              Legal Hub
             </Link>
             <Link
-              href="/portfolio"
+              href="/privacy"
               className="hover:text-[#FFC928] transition-colors"
             >
-              Project Archive
+              Privacy Policy
             </Link>
             <Link
-              href="/contact"
+              href="/terms"
               className="hover:text-[#FFC928] transition-colors"
             >
-              Start a Project
+              Terms &amp; Conditions
             </Link>
           </div>
         </div>
