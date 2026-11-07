@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScrollProvider } from "@/components/animations/SmoothScrollProvider";
 import { Studio14AIChat } from "@/components/chat/Studio14AIChat";
+import { ContentProtection } from "@/components/common/ContentProtection";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio14.creative"),
@@ -54,6 +55,16 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.svg", type: "image/svg+xml" },
+    ],
   },
 };
 
@@ -114,6 +125,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <SmoothScrollProvider>
+          <ContentProtection />
           <Navbar />
           <main id="main-content" className="flex-1">
             {children}

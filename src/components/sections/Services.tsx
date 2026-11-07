@@ -22,10 +22,10 @@ export const Services: React.FC = () => {
             className="hidden md:block absolute -top-4 left-1/4"
           />
           <SectionHeading
-            eyebrow="Our Services"
-            headline="End-to-End Creative Solutions"
-            highlightedWord="Creative Solutions"
-            supportingText="From concept to completion, we help your brand grow in the digital world."
+            eyebrow="What We Craft"
+            headline="Four Disciplines. Zero Creative Fluff."
+            highlightedWord="Zero Creative Fluff."
+            supportingText="No cookie-cutter templates or slow agency bureaucracy. Just handcrafted flagships, magnetic video edits, ads that actually sell, and quiet automations that save you hours."
           />
         </div>
 

@@ -13,6 +13,7 @@ import {
   User,
   MessageSquare,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 
 interface Message {
   id: string;
@@ -192,7 +193,7 @@ export const Studio14AIChat: React.FC = () => {
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ delay: 1, duration: 0.3 }}
             onClick={() => setIsOpen(true)}
-            className="hidden sm:flex items-center gap-2 mb-3 px-3.5 py-1.5 rounded-full bg-[#FAF9F6] border-2 border-[#171717] shadow-[3px_3px_0px_#171717] cursor-pointer hover:bg-[#FFC928] hover:shadow-[4px_4px_0px_#171717] transition-all"
+            className="hidden sm:flex items-center gap-2 mb-3 px-3.5 py-1.5 rounded-full bg-[#FAF9F6] border-2 border-[#171717] shadow-[3px_3px_0px_#171717] cursor-pointer hover:bg-[#FFC928] hover:shadow-[4px_4px_0px_#171717] transition-all ml-auto w-fit"
           >
             <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
             <span className="font-hand text-base font-bold text-[#171717]">
@@ -202,25 +203,48 @@ export const Studio14AIChat: React.FC = () => {
         )}
       </AnimatePresence>
 
-      {/* Floating Chat Trigger Button */}
-      <motion.button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        whileHover={{ scale: 1.06 }}
-        whileTap={{ scale: 0.95 }}
-        aria-label={isOpen ? "Close Studio14 AI Chat" : "Open Studio14 AI Chat"}
-        className="relative flex items-center justify-center w-14 h-14 rounded-2xl bg-[#FFC928] text-[#171717] border-3 border-[#171717] shadow-[4px_4px_0px_#171717] hover:shadow-[6px_6px_0px_#171717] transition-shadow cursor-pointer ml-auto"
-      >
-        <Studio14ChatIcon isOpen={isOpen} />
+      {/* Floating Action Dock: WhatsApp Chat + Studio14 AI Chat Button */}
+      <div className="flex items-center gap-2.5 ml-auto justify-end">
+        {/* WhatsApp Quick Chat Floating Button */}
+        <motion.a
+          href="https://wa.me/971504974967?text=Hi%20Studio14%2C%20I%20would%20like%20to%20discuss%20a%20project!"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with Studio14 on WhatsApp (+971 50 497 4967)"
+          title="Chat on WhatsApp (+971 50 497 4967)"
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          className="relative flex items-center justify-center w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-[#25D366] text-white border-3 border-[#171717] shadow-[4px_4px_0px_#171717] hover:shadow-[6px_6px_0px_#171717] hover:-rotate-3 transition-all cursor-pointer group"
+        >
+          <WhatsAppIcon className="w-6 h-6 fill-white transition-transform group-hover:scale-110" />
 
-        {/* Small glowing AI Badge */}
-        {!isOpen && (
-          <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
-            <span className="relative inline-flex rounded-full h-4 w-4 bg-[#10B981] border-2 border-[#FAF9F6]" />
+          {/* Small online indicator dot */}
+          <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+            <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-300 border-2 border-[#171717]" />
           </span>
-        )}
-      </motion.button>
+        </motion.a>
+
+        {/* Studio14 AI Chat Trigger Button */}
+        <motion.button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          whileHover={{ scale: 1.06 }}
+          whileTap={{ scale: 0.95 }}
+          aria-label={isOpen ? "Close Studio14 AI Chat" : "Open Studio14 AI Chat"}
+          className="relative flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#FFC928] text-[#171717] border-3 border-[#171717] shadow-[4px_4px_0px_#171717] hover:shadow-[6px_6px_0px_#171717] transition-shadow cursor-pointer"
+        >
+          <Studio14ChatIcon isOpen={isOpen} />
+
+          {/* Small glowing AI Badge */}
+          {!isOpen && (
+            <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75" />
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-[#10B981] border-2 border-[#FAF9F6]" />
+            </span>
+          )}
+        </motion.button>
+      </div>
 
       {/* Expandable Chat Drawer Window */}
       <AnimatePresence>
@@ -259,6 +283,16 @@ export const Studio14AIChat: React.FC = () => {
 
               {/* Header Actions */}
               <div className="flex items-center gap-1.5">
+                <a
+                  href="https://wa.me/971504974967?text=Hi%20Studio14%2C%20I%20would%20like%20to%20discuss%20a%20project!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Switch to WhatsApp Direct (+971 50 497 4967)"
+                  aria-label="Chat on WhatsApp"
+                  className="p-1.5 rounded-lg text-[#25D366] hover:bg-emerald-100/50 transition-colors cursor-pointer"
+                >
+                  <WhatsAppIcon className="w-4 h-4 fill-[#25D366]" />
+                </a>
                 <button
                   type="button"
                   onClick={handleReset}

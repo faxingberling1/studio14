@@ -43,10 +43,10 @@ export default function ServicesPage() {
     <PageTransition className="pt-28 sm:pt-36 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28">
         <SectionHeading
-          eyebrow="Our Services Directory"
-          headline="End-to-End Creative Solutions"
-          highlightedWord="Creative Solutions"
-          supportingText="Select a dedicated Studio14 discipline below to explore its full deliverables, tools, workflow, and showcase concepts."
+          eyebrow="Studio Disciplines"
+          headline="Crafted With Dil. Engineered to Scale."
+          highlightedWord="Engineered to Scale."
+          supportingText="From high-speed Next.js flagships and retention-focused video to multi-channel ads and autonomous workflows—explore our 4 specialized creative departments."
         />
 
         {/* 2x2 Directory Grid of Dedicated Service Pages */}

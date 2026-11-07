@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- 3D Offset Shadow (Studio14 Neo-Brutalist Truck Art depth) -->
+  <rect x="52" y="52" width="416" height="416" rx="92" fill="#171717" />
+  
+  <!-- Main Badge in Studio14 Brand Yellow -->
+  <rect x="40" y="40" width="416" height="416" rx="92" fill="#FFC928" stroke="#171717" stroke-width="22" />
+  
+  <!-- Truck-Art Chamakpatti Diagonal Hatch Accents (Top Left) -->
+  <path d="M72 136L136 72" stroke="#171717" stroke-width="12" stroke-linecap="round" />
+  <circle cx="104" cy="104" r="8" fill="#171717" />
+
+  <!-- Iconic 8-Pointed Chamakpatti Star (Top Right) -->
+  <path d="M376 86L384 108L406 116L384 124L376 146L368 124L346 116L368 108Z" fill="#171717" />
+  
+  <!-- Central Signature Black Monolith -->
+  <rect x="110" y="112" width="292" height="288" rx="36" fill="#171717" />
+  
+  <!-- Crisp "14" in Off-White / Cream (#FAF9F6) -->
+  <!-- Numeral 1 -->
+  <path d="M198 174V338M198 174L162 210" stroke="#FAF9F6" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Numeral 4 -->
+  <path d="M322 290H248V174L248 300M322 236V338" stroke="#FAF9F6" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Subtle Chamakpatti Sparkle Accent in Monolith Corner -->
+  <circle cx="370" cy="144" r="5" fill="#FFC928" />
+  <circle cx="256" cy="426" r="7" fill="#171717" />
+</svg>
+

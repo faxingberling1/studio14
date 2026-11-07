@@ -38,7 +38,7 @@ const WORKFLOW_NODES: WorkflowNode[] = [
     automationRole:
       "Website form triggers a webhook instantly, validating customer data, formatting phone numbers, and deduplicating entries.",
     humanTimeSaved: "15 mins per lead",
-    connectedTool: "Next.js Webhook & Zod",
+    connectedTool: "Next.js & Automated Webhooks",
   },
   {
     id: "crm",

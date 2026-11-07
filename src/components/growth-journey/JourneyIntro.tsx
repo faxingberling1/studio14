@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight, Sparkles, Compass, Rocket } from "lucide-react";
 import { FloralOrnament, FloralCorner } from "./doodles/FloralOrnament";
@@ -123,24 +124,13 @@ export const JourneyIntro: React.FC<JourneyIntroProps> = ({
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </button>
 
-            <a
-              href="#contact"
-              onClick={(e) => {
-                const target =
-                  document.getElementById("contact") ||
-                  document.getElementById("studio14-inquiry-form");
-                if (target) {
-                  e.preventDefault();
-                  target.scrollIntoView({ behavior: "smooth", block: "start" });
-                } else if (onContactClick) {
-                  onContactClick();
-                }
-              }}
+            <Link
+              href="/contact"
               className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white hover:bg-[#F4F1EA] text-[#171717] font-semibold text-base border-2 border-[#171717] shadow-[0_4px_0_0_#171717] hover:shadow-[0_2px_0_0_#171717] hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Compass className="w-4 h-4 text-[#171717]" />
               <span>Already Have a Business? Let&apos;s Talk</span>
-            </a>
+            </Link>
           </motion.div>
         </div>
 

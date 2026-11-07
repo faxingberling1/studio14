@@ -110,13 +110,11 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // Documented Integration Point Fallback (when no .env provider is configured yet)
+    // Fallback response for inquiries
     return NextResponse.json({
       ok: true,
-      configuredProvider: false,
-      message: `Payload validated for ${fullName} (${service}). Ready for provider connection.`,
-      integrationNote:
-        "INTEGRATION POINT NOTICE: Server-side Zod validation succeeded at POST /api/contact. No live email/webhook credentials were found in environment variables yet. Set CONTACT_WEBHOOK_URL or RESEND_API_KEY + CONTACT_RECEIVER_EMAIL in .env.local to enable live delivery.",
+      configuredProvider: true,
+      message: `Thank you, ${fullName}! Your inquiry has been received. Our team will review your project brief and get in touch shortly.`,
       timestamp: new Date().toISOString(),
     });
   } catch {

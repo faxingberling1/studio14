@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, X, Sparkles } from "lucide-react";
 import { servicesData } from "@/data/services";
 import { Studio14Logo } from "@/components/doodles/Studio14Logo";
+import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -126,14 +127,25 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
               </div>
             </div>
 
-            {/* Bottom CTA */}
-            <div className="mt-8 pt-5 border-t-2 border-[#171717]/10">
+            {/* Bottom Actions: WhatsApp Chat + Let's Talk CTA */}
+            <div className="mt-8 pt-5 border-t-2 border-[#171717]/10 space-y-2.5">
+              <a
+                href="https://wa.me/971504974967?text=Hi%20Studio14%2C%20I%20would%20like%20to%20discuss%20a%20project!"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onClose}
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#25D366] text-white font-bold text-sm border-2 border-[#171717] shadow-[2px_2px_0px_#171717] hover:translate-y-0.5 transition-all"
+              >
+                <WhatsAppIcon className="w-4 h-4 fill-white" />
+                <span>Chat on WhatsApp</span>
+              </a>
+
               <Link
                 href="/contact"
                 onClick={onClose}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#FFC928] text-[#171717] font-bold border-2 border-[#171717] shadow-[3px_3px_0px_#171717] hover:translate-y-0.5 transition-all"
               >
-                <span>Let&apos;s Create</span>
+                <span>Let&apos;s Talk</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

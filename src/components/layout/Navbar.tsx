@@ -210,13 +210,13 @@ export const Navbar: React.FC = () => {
               })}
             </nav>
 
-            {/* Right: Let's Create CTA + Mobile Menu Button */}
+            {/* Right: Let's Talk CTA + Mobile Menu Button */}
             <div className="flex items-center gap-3 shrink-0">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="hidden sm:inline-flex items-center gap-2 px-4 lg:px-5 py-2.5 rounded-full bg-[#FFC928] text-[#171717] font-bold text-xs lg:text-sm border-2 border-[#171717] shadow-[3px_3px_0px_#171717] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_#171717] transition-all group"
               >
-                <span>Let&apos;s Create</span>
+                <span>Let&apos;s Talk</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
 

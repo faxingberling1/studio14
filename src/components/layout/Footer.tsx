@@ -6,6 +6,7 @@ import { ArrowUpRight, Mail, MapPin, Clock } from "lucide-react";
 import { Studio14Logo } from "@/components/doodles/Studio14Logo";
 import { Sparkle } from "@/components/doodles/Sparkle";
 import { servicesData } from "@/data/services";
+import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 
 const InstagramIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -32,6 +33,7 @@ const XTwitterIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" 
 );
 
 const socialLinks = [
+  { name: "WhatsApp", href: "https://wa.me/971504974967?text=Hi%20Studio14%2C%20I%20would%20like%20to%20discuss%20a%20project!", icon: WhatsAppIcon },
   { name: "Instagram", href: "https://instagram.com", icon: InstagramIcon },
   { name: "YouTube", href: "https://youtube.com", icon: YouTubeIcon },
   { name: "LinkedIn", href: "https://linkedin.com", icon: LinkedInIcon },

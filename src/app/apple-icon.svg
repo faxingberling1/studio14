@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Solid Background for iOS / Apple Home Screen Icons (iOS rounds corners automatically) -->
+  <rect width="512" height="512" fill="#FFC928" />
+  
+  <!-- Subtle Truck-Art Frame Border -->
+  <rect x="24" y="24" width="464" height="464" rx="48" fill="none" stroke="#171717" stroke-width="16" />
+
+  <!-- Iconic 8-Pointed Chamakpatti Star (Top Right) -->
+  <path d="M400 68L408 90L430 98L408 106L400 128L392 106L370 98L392 90Z" fill="#171717" />
+  
+  <!-- Central Signature Black Monolith with 3D shadow -->
+  <rect x="118" y="118" width="292" height="288" rx="40" fill="#171717" opacity="0.3" />
+  <rect x="110" y="112" width="292" height="288" rx="40" fill="#171717" />
+  
+  <!-- Crisp "14" in Off-White / Cream (#FAF9F6) -->
+  <path d="M198 174V338M198 174L162 210" stroke="#FAF9F6" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M322 290H248V174L248 300M322 236V338" stroke="#FAF9F6" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Studio Accent -->
+  <circle cx="370" cy="144" r="6" fill="#FFC928" />
+</svg>
+

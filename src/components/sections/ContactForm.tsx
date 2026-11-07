@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Send, CheckCircle2, AlertCircle, Terminal } from "lucide-react";
+import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { contactFormSchema, ContactFormValues } from "@/lib/validation";
 
 interface ApiResponse {
@@ -79,8 +79,8 @@ export const ContactForm: React.FC = () => {
           </h3>
         </div>
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC928]/35 border border-[#171717] text-xs font-bold text-[#171717] self-start sm:self-auto">
-          <span className="w-2 h-2 rounded-full bg-[#171717]" />
-          Zod + Server Validated
+          <span className="w-2 h-2 rounded-full bg-[#10B981]" />
+          Direct Studio Desk
         </span>
       </div>
 
@@ -255,35 +255,24 @@ export const ContactForm: React.FC = () => {
           </div>
         )}
 
-        {/* Honest Server-Side Validation & Integration Point Feedback */}
+        {/* Server Response Feedback */}
         {serverResponse && (
           <div
             role="status"
             className="p-5 rounded-2xl bg-[#FFC928]/25 border-2 border-[#171717] space-y-2"
           >
             <div className="flex items-center gap-2 font-bold text-[#171717]">
-              {serverResponse.configuredProvider ? (
-                <CheckCircle2 className="w-5 h-5 text-[#171717] fill-[#FFC928]" />
-              ) : (
-                <Terminal className="w-5 h-5 text-[#171717]" />
-              )}
+              <CheckCircle2 className="w-5 h-5 text-[#171717] fill-[#FFC928]" />
               <span>{serverResponse.message}</span>
             </div>
-            {serverResponse.integrationNote && (
-              <p className="text-xs sm:text-sm text-[#171717]/85 leading-relaxed font-mono bg-[#FAF9F6] p-3 rounded-xl border border-[#171717]/30">
-                {serverResponse.integrationNote}
-              </p>
-            )}
           </div>
         )}
 
         {/* Submit Button */}
         <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="text-xs text-[#666666]">
-            Protected by server-side Zod validation at{" "}
-            <code className="font-mono text-[#171717] bg-[#F4F1EA] px-1.5 py-0.5 rounded border border-[#171717]/20">
-              POST /api/contact
-            </code>
+          <p className="text-xs text-[#666666] flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
+            Direct Studio Response · Privacy Protected
           </p>
 
           <button
