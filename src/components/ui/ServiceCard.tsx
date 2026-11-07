@@ -77,7 +77,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
       {/* Bottom Action Link */}
       <div className="mt-6 pt-4 border-t border-[#171717]/10">
         <Link
-          href={`/services#${service.slug}`}
+          href={`/services/${service.slug}`}
           className="inline-flex items-center justify-between w-full text-sm font-bold text-[#171717] group-hover:text-[#171717] focus-visible:outline-none focus-visible:underline"
         >
           <span>Explore {service.shortTitle}</span>

@@ -15,7 +15,7 @@ interface MobileMenuProps {
 
 const navLinks = [
   { label: "Home", href: "/#home", id: "home" },
-  { label: "Services", href: "/#services", id: "services" },
+  { label: "All Services", href: "/services", id: "services" },
   { label: "Portfolio", href: "/#portfolio", id: "portfolio" },
   { label: "About", href: "/#about", id: "about" },
   { label: "Insights", href: "/#insights", id: "insights" },
@@ -91,23 +91,33 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 })}
               </nav>
 
-              {/* Services Quick Links */}
+              {/* Dedicated Individual Service Pages */}
               <div className="mt-6 pt-5 border-t-2 border-[#171717]/10">
                 <p className="font-hand text-lg font-bold text-[#666666] mb-3 flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-[#FFC928]" />
-                  Our Services Breakdown
+                  Dedicated Service Pages
                 </p>
-                <div className="grid grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 gap-2.5">
                   {servicesData.map((service) => (
                     <Link
                       key={service.id}
-                      href={`/services#${service.slug}`}
+                      href={`/services/${service.slug}`}
                       onClick={onClose}
-                      className="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-[#F3EFE6] border border-[#171717]/20 text-sm font-semibold text-[#171717] hover:border-[#171717] hover:bg-[#FFC928]/30 transition-colors"
+                      className="flex flex-col p-3.5 rounded-xl bg-[#F3EFE6] border-2 border-[#171717]/20 hover:border-[#171717] hover:bg-[#FFC928]/25 transition-colors"
                     >
-                      <span>{service.title}</span>
-                      <span className="font-hand text-base font-bold text-[#666666]">
-                        {service.number}
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm font-bold text-[#171717]">
+                          {service.title}
+                        </span>
+                        <span
+                          className="font-hand text-sm font-bold px-2 py-0.5 rounded border border-[#171717] text-[#171717]"
+                          style={{ backgroundColor: service.accentColor }}
+                        >
+                          {service.number}
+                        </span>
+                      </div>
+                      <span className="text-xs text-[#666666] mt-1 line-clamp-1">
+                        {service.features.join(" • ")}
                       </span>
                     </Link>
                   ))}
@@ -132,4 +142,3 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
     </AnimatePresence>
   );
 };
-

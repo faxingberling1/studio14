@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
               {servicesData.map((service) => (
                 <li key={service.id}>
                   <Link
-                    href={`/services#${service.slug}`}
+                    href={`/services/${service.slug}`}
                     className="group text-[#FAF9F6]/75 hover:text-[#FFC928] transition-colors inline-flex items-center gap-1.5"
                   >
                     <span className="font-mono text-xs text-[#FFC928]">
