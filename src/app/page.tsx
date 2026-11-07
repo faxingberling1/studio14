@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero } from "@/components/sections/Hero";
+import { GrowthJourneyTeaser } from "@/components/growth-journey/GrowthJourneyTeaser";
 import { Services } from "@/components/sections/Services";
 import { About } from "@/components/sections/About";
 import { Portfolio } from "@/components/sections/Portfolio";
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <GrowthJourneyTeaser />
       <Services />
       <About />
       <Portfolio />
@@ -24,4 +26,3 @@ export default function HomePage() {
     </>
   );
 }
-

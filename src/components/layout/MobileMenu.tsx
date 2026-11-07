@@ -15,6 +15,7 @@ interface MobileMenuProps {
 
 const navLinks = [
   { label: "Home", href: "/#home", id: "home" },
+  { label: "Growth Journey", href: "/growth-journey", id: "growth-journey" },
   { label: "All Services", href: "/services", id: "services" },
   { label: "Portfolio", href: "/#portfolio", id: "portfolio" },
   { label: "About", href: "/#about", id: "about" },

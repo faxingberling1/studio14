@@ -1,6 +1,16 @@
 @import "tailwindcss";
 @import "animate.css";
 
+@theme {
+  --color-brand-yellow: #FFC928;
+  --color-brand-yellow-dark: #E5B320;
+  --color-charcoal: #171717;
+  --color-cream: #FAF9F6;
+  --color-warm-bg: #F4F1EA;
+  --color-muted-gray: #666666;
+  --color-footer-dark: #202020;
+}
+
 :root {
   --font-dm-sans: "DM Sans", system-ui, -apple-system, sans-serif;
   --font-playfair: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;

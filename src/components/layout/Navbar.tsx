@@ -25,6 +25,8 @@ import { Lightbulb } from "@/components/doodles/Lightbulb";
 
 const SECTION_IDS = [
   "home",
+  "growth-journey",
+  "packages",
   "services",
   "about",
   "portfolio",
@@ -78,6 +80,7 @@ export const Navbar: React.FC = () => {
   const navItems = [
     { label: "Home", href: "/#home", id: "home" },
     { label: "Services", href: "/services", id: "services", hasDropdown: true },
+    { label: "Growth Journey", href: "/growth-journey", id: "growth-journey" },
     { label: "Portfolio", href: "/#portfolio", id: "portfolio" },
     { label: "About", href: "/#about", id: "about" },
     { label: "Insights", href: "/#insights", id: "insights" },
@@ -367,11 +370,11 @@ export const Navbar: React.FC = () => {
                             <ArrowRight className="w-3.5 h-3.5" />
                           </Link>
                           <Link
-                            href="/#portfolio"
+                            href="/growth-journey"
                             onClick={() => setServicesOpen(false)}
                             className="w-full inline-flex items-center justify-center gap-1 py-1 text-xs font-semibold text-[#FAF9F6]/80 hover:text-[#FFC928] transition-colors"
                           >
-                            <span>Explore Recent Studio Work</span>
+                            <span>Explore The Growth Journey</span>
                             <ArrowUpRight className="w-3.5 h-3.5" />
                           </Link>
                         </div>
