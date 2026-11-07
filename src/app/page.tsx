@@ -6,6 +6,7 @@ import { Portfolio } from "@/components/sections/Portfolio";
 import { Process } from "@/components/sections/Process";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { StudioJournalAndCareers } from "@/components/sections/StudioJournalAndCareers";
+import { FAQ } from "@/components/sections/FAQ";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Process />
       <Testimonials />
       <StudioJournalAndCareers />
+      <FAQ />
       <ContactCTA />
     </>
   );

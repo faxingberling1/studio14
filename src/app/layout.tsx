@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScrollProvider } from "@/components/animations/SmoothScrollProvider";
+import { Studio14AIChat } from "@/components/chat/Studio14AIChat";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio14.creative"),
@@ -118,6 +119,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <Studio14AIChat />
         </SmoothScrollProvider>
       </body>
     </html>

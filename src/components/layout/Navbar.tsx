@@ -32,6 +32,7 @@ const SECTION_IDS = [
   "testimonials",
   "insights",
   "careers",
+  "faq",
   "contact",
 ];
 

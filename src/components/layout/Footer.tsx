@@ -98,6 +98,7 @@ export const Footer: React.FC = () => {
                 { label: "Creative Process", href: "/#process" },
                 { label: "Insights & Notes", href: "/#insights" },
                 { label: "Careers", href: "/#careers" },
+                { label: "FAQs", href: "/#faq" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
